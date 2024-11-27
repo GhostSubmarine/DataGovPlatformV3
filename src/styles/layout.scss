@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+#nprogress {
+  .bar {
+    background: var(--el-color-primary) !important;
+    z-index: 99999 !important;
+  }
+}
+
+.layout-container {
+  width: 100%;
+  height: 100%;
+  .layout-sidebar {
+    background: var(--theme-menu-bg-color);
+    border-right: var(--theme-border-color-light) 1px solid;
+    height: inherit;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden !important;
+    .el-scrollbar__view {
+      // overflow: hidden;
+		overflow-y: auto;
+		height: 100%;
+		scrollbar-width: none;
+		/* 对于Firefox浏览器 */
+    }
+    &.aside-expend {
+      width: var(--theme-aside-width) !important;
+      transition: width 0.3s ease;
+    }
+    &.aside-compress {
+      width: 64px !important;
+      transition: width 0.3s ease;
+    }
+  }
+  .layout-header {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(40px + var(--theme-header-height));
+  }
+  .layout-main {
+    padding: 0 !important;
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--theme-main-bg-color);
+    .layout-card{
+      min-height: calc(100vh - 70px - var(--theme-header-height));
+    }
+  }
+  .layout-scrollbar {
+    //width: 100%;
+    padding: 15px;
+  }
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-start-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 180px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-start-top {
+  display: flex;
+  justify-content: flex-start;
+}
+.flex-start-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-between-top {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+}
+.flex-end-top {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.cursorP {
+  cursor: pointer;
+}
+.el-popover.el-popper {
+  min-width: 10px;
+}
+.ml4 {
+  margin-left: 4px;
+}
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.arrowBox {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.fontWeight {
+  font-weight: 700;
+}
+.el-scrollbar__view {
+  height: 100%;
+}
+.el-form--inline .el-form-item {
+  margin-right: 16px !important;
+}
+.mr4 {
+  margin-right: 4px;
+}
+.mb4 {
+  margin-bottom: 4px;
+}
+.mb10 {
+  margin-bottom: 10px !important;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr16 {
+  margin-right: 16px;
+}
+.mr26 {
+  margin-right: 26px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.el-table th {
+  background-color: #fafafa !important;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8 !important;
+}
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+.el-header {
+  padding: 0;
+}
+.el-card__body {
+  padding: 20px;
+}
+.rightBox .el-card__body .el-form-item--default {
+  margin-bottom: 0px;
+}
+.lableHoverStyle:hover {
+  color: #667afa;
+}
