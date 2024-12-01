@@ -23,7 +23,14 @@ import FastUser from '@/components/fast-user'
 import SvgIcon from '@/components/svg-icon'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import dayjs from "dayjs"
+import VChart from 'vue-echarts';
+import * as echarts from 'echarts';
 const app = createApp(App)
+// 全局注册vue-echarts组件
+app.component('v-chart', VChart);
+ 
+// 如果你需要在全局范围内使用echarts，可以将其挂载到Vue的原型上（可选）
+app.config.globalProperties.$echarts = echarts;
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }

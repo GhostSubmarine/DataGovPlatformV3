@@ -24,6 +24,13 @@ export default defineConfig({
 		})
 	],
 	server: {
+		proxy: {
+      '/api': {
+        target: 'http://222.128.18.217:8082/',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
 		host: '0.0.0.0',
 		port: 3000, // 端口号
 		open: false // 是否自动打开浏览器
