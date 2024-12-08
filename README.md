@@ -1,5 +1,5 @@
 ## 项目说明
-srt-cloud 是采用 Vue3，Ts，Spring Cloud Alibaba、SpringSecurity、Spring Cloud Gateway、SpringBoot、Nacos、Redis、Mybatis-Plus，Tidb，Flink，Hadoop 等最新技术，开发的全新数睿通数据中台，包含数据集成，数据开发，数据治理，数据资产，数据服务，数据集市六大模块，解决数据孤岛问题，实现数据统一口径标准，自定义数据开发任务，帮助企业，政府等解决数据问题！
+srt-cloud 是采用 Vue3，Ts，Spring Cloud Alibaba、SpringSecurity、Spring Cloud Gateway、SpringBoot、Nacos、Redis、Mybatis-Plus，Tidb，Flink，Hadoop 等最新技术，开发的全新数据中台，包含数据集成，数据开发，数据治理，数据资产，数据服务，数据集市六大模块，解决数据孤岛问题，实现数据统一口径标准，自定义数据开发任务，帮助企业，政府等解决数据问题！
 
 ## 功能模块说明
 
@@ -89,7 +89,7 @@ srt-cloud 是采用 Vue3，Ts，Spring Cloud Alibaba、SpringSecurity、Spring C
 
 系统数仓可以在全局项目管理中配置不同租户的数据仓库，在数据集成集成到ods层之后， 可以通过数据生产进行数据开发，数据整体流向图如下：
 
-###### ![数睿通数仓架构图](images/数睿通数仓架构图.png)
+###### ![数仓架构图](images/数仓架构图.png)
 
 关于数仓为什么要分层：分层可以有助于数据的管理，同时每次取数只需要获取统计分析过的成品就可以，不需要从源头数据反复计算，避免了计算资源的浪费，通常源头数据量较大，并且中间的处理逻辑较为复杂，所以采用建模分层的方式解决，通常表的前缀都用层级来定义。
 
