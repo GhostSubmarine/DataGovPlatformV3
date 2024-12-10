@@ -6,7 +6,7 @@ export const themeConfig: ITheme = {
   "primaryColor": "#667AFA",
   "layout": "vertical",
   "uniqueOpened": true,
-  "isLogo": true,
+  "isLogo": false,
   "isBreadcrumb": true,
   "isTabsView": true,
   "isTabsCache": true,

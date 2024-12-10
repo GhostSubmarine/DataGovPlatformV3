@@ -15,11 +15,9 @@ export default {
 	updateTime: 'Update Time',
 	required: 'Required items cannot be empty',
 	app: {
-		title: 'SRT',
-		description:
-			'Shuruitong 2.0 Data Center adopts the latest technologies such as Vue3, TypeScript, Element Plus, Vue Router, Pinia, Axios, i18n, Vite in the front-end, and big data technologies such as SpringCloudAlibaba, Flink, Hadoop, Seattunnel, Dbswtich in the back-end. It includes six modules: data integration, data development, data governance, data assets, data services, and data mart, which solve the problem of data silos, achieve unified data caliber standards, customize data development tasks, and help enterprises and governments solve data problems!',
-		logoText: 'SRT',
-		miniLogoText: 'SRT',
+		title: 'VIRDA',
+		logoText: 'VIRDA',
+		miniLogoText: 'VIRDA',
 		username: 'Username',
 		password: 'Password',
 		captcha: 'Captcha',

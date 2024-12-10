@@ -14,6 +14,7 @@ const service = axios.create({
 // 请求拦截器
 service.interceptors.request.use(
 	(config: any) => {
+		config.url = `${import.meta.env.VITE_APP_BASE_API_PREFIX}${config.url}`
 		const userStore = store.userStore
 		if (userStore?.token) {
 			config.headers.Authorization = userStore.token

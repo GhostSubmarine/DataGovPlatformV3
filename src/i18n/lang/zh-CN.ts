@@ -15,11 +15,9 @@ export default {
 	updateTime: '更新时间',
 	required: '必填项不能为空',
 	app: {
-		title: '数睿通2.0',
-		description:
-			'数睿通2.0数据中台，前台采用 Vue3、TypeScript、Element Plus、Vue Router、Pinia、Axios、i18n、Vite 等最新技术，后台采用 SpringCloudAlibaba、Flink、Hadoop，Seatunnel，Dbswtich 等大数据技术，包含数据集成，数据开发，数据治理，数据资产，数据服务，数据集市六大模块，解决数据孤岛问题，实现数据统一口径标准，自定义数据开发任务，帮助企业，政府解决数据问题！',
-		logoText: '数睿通2.0',
-		miniLogoText: '数睿通2.0',
+		title: '沃达数智中台',
+		logoText: '沃达数智中台',
+		miniLogoText: '沃达数智中台',
 		username: '用户名',
 		password: '密码',
 		captcha: '验证码',
@@ -68,5 +66,8 @@ export default {
 		home: '首页',
 		profilePassword: '修改密码',
 		changeProject: '切换项目'
+	},
+	home: {
+		
 	}
 }

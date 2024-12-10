@@ -9,6 +9,6 @@
 import WangEditor from '@/components/wang-editor/index.vue'
 import { ref } from 'vue'
 
-const editorValue = ref('<p>数睿通</p>')
+const editorValue = ref('<p></p>')
 // const editorValue2 = ref('<p>maku</p>')
 </script>

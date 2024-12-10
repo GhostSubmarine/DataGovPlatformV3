@@ -9,7 +9,7 @@
 						</keep-alive>
 						<component :is="Component" v-else :key="route.name" />
 					</router-view>
-					<!-- <div style="text-align: center;">COPYRIGHT 2024 天津数睿通科技有限公司. ALL RIGHTS RESERVED</div> -->
+					<!-- <div style="text-align: center;">COPYRIGHT 2024 天津科技有限公司. ALL RIGHTS RESERVED</div> -->
 				</div>
 			</el-scrollbar>
 		</el-main>
